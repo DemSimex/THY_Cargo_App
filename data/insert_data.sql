@@ -8,8 +8,6 @@ INSERT INTO Region (name) VALUES
 ('West Europe'),
 ('North Europe');
 
-
-
 INSERT INTO Country (name, region_id) VALUES
 ('Albania', 1),
 ('Austria', 2),
@@ -47,3 +45,20 @@ INSERT INTO Country (name, region_id) VALUES
 ('Spain', 3),
 ('Sweden', 6),
 ('Switzerland', 2);
+
+INSERT INTO Cargo_Category (category_name, rate_multiplier) VALUES
+('General Cargo (GEN)', 1.00),
+('Perishable Cargo (PER)', 1.25),
+('Dangerous Goods (DGR)', 1.50),
+('Pharmaceuticals & Medical (PIL)', 1.60),
+('Live Animals (AVI)', 1.75),
+('Valuable Cargo (VAL)', 2.00);
+
+INSERT INTO Handling_Service (service_name, fee) VALUES
+('Air Waybill (AWB) Documentation Fee', 25.00),
+('X-Ray & Security Screening', 35.00),
+('Customs Clearance & Terminal Handling', 50.00),
+('Cold Storage & Temperature Control', 60.00),
+('Dangerous Goods (DGR) Inspection Fee', 75.00),
+('Local Pick-up & Delivery Service', 80.00);
+
